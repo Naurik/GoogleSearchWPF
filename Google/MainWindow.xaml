@@ -1,0 +1,20 @@
+﻿<Window x:Class="Google.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Google"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Name="mains">
+    <Grid>
+        <TabControl Name="Control" FontFamily="Ravie">
+            <TabItem Name="GoogleBasic" Header="GoogleSearch" Margin="-2,-2,1,0">
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,-10">
+                    <WebBrowser Name="google" Margin="0,0,0,10"/>
+                </Grid>
+            </TabItem>
+            <TabItem Name="plus" Header="+" Margin="0 0" PreviewMouseLeftButtonDown="AddItems"/>
+        </TabControl>
+
+    </Grid>
+</Window>
